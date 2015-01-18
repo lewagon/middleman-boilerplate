@@ -4,16 +4,15 @@
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
 
-// Local fonts: un-comment following lines
+// Local fonts (uncomment following lines)
 // @font-face {
 //   font-family: "Font Name";
-//   src: asset-url('fonts/FontFile.eot');
-//   src: asset-url('fonts/FontFile.eot?#iefix') format('embedded-opentype'),
-//        asset-url('fonts/FontFile.woff') format('woff'),
-//        asset-url('fonts/FontFile.ttf') format('truetype')
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
 
 // Font-size and line-height
 $base-size: 16px;
