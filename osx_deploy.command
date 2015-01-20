@@ -1,5 +1,5 @@
 #!/bin/sh
-cd `dirname $BASH_SOURCE`
+cd "${0%/*}"
 bundle install
 bundle exec middleman deploy
 
