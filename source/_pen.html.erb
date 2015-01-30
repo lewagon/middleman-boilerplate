@@ -1,0 +1,16 @@
+<div class="col-xs-12 col-sm-6 col-md-3 text-center">
+  <div class="pen">
+    <div class="row">
+      <div class="col-xs-3 col-sm-12">
+        <%= image_tag pen.picture, class: "img-circle img-responsive" %>
+      </div>
+      <div class="col-xs-9 col-sm-12">
+        <h2>
+          <%= pen.name %>
+          <span class="label label-<%= pen.color %>"><%= pen.price %></span>
+        </h2>
+        <p><%= pen.summary %></p>
+      </div>
+    </div>
+  </div>
+</div>

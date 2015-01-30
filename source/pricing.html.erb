@@ -1,0 +1,12 @@
+
+---
+title: Find the stylus that suits you
+---
+<div class="container" id="pricing">
+<div class="row">
+<h1>Styl.you</h1>
+<% data.pens.each do |pen| %>
+<%= partial(:pen, locals: {pen: pen}) %>
+<% end %>
+</div>
+</div>

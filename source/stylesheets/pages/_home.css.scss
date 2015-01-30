@@ -1,0 +1,49 @@
+#banner
+{
+  background-image: url(../images/abitbol.jpg);
+  color: white;
+  padding: 200px 0;
+  background-size: cover;
+  height: 650px;
+  h1
+  {
+    font-size: 50px;
+    color: white;
+    font-family: $brandon-light;
+  }
+  p
+  {
+    font-size: 25px;
+    font-weight: 100;
+  }
+}
+.card{
+  padding: 10px;
+  font-weight: 300;
+  h2{
+    font-size: 22px;
+  }
+}
+#banner, #description, #newsletter {
+  position: relative;
+}
+
+#newsletter h2 {
+margin-top: 1em;
+text-transform: upcase;
+font-size: 60px;
+font-family: $brandon-light;
+}
+.scroll-btn{
+position: absolute;
+width: 100px;
+margin-left: -50px;
+bottom: 20px;
+left: 50%;
+text-align: center;
+font-size: 60px;
+color: white;
+&:hover{
+  color: white;
+}
+}

@@ -1,0 +1,50 @@
+$duration: 2s;
+$delay: 1s;
+$initial-top: -20px;
+$initial-opacity: 0;
+$final-opacity: 1;
+$final-top: 0;
+.square {
+width: 200px;
+height: 200px;
+background: blue;
+margin: 50px auto;
+}
+@keyframes fadeAndSlide {
+0% {
+opacity: $initial-opacity;
+top: $initial-top;
+}
+100% {
+opacity: $final-opacity;
+top: $final-top;
+}
+}
+@-webkit-keyframes fadeAndSlide {
+0% {
+opacity: $initial-opacity;
+top: $initial-top;
+}
+100% {
+opacity: $final-opacity;
+top: $final-top;
+}
+}
+@-moz-keyframes fadeAndSlide {
+0% {
+opacity: $initial-opacity;
+top: $initial-top;
+}
+100% {
+opacity: $final-opacity;
+top: $final-top;
+}
+}
+.fade-and-slide {
+position: relative;
+top: $initial-top;
+opacity: $initial-opacity;
+animation: fadeAndSlide $duration $delay ease forwards;
+-webkit-animation: fadeAndSlide $duration $delay ease forwards;
+-moz-animation: fadeAndSlide $duration $delay ease forwards;
+}

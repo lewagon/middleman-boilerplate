@@ -1,0 +1,26 @@
+$btn-medium-color: white;
+.btn-medium {
+border: 1px solid $btn-medium-color;
+color: $btn-medium-color;
+padding: 10px 15px;
+border-radius: 20px;
+font-weight: 100;
+opacity: 0.7;
+text-decoration: none;
+transition: opacity 0.3s ease, letter-spacing 0.3s ease;
+&:hover {
+text-decoration: none;
+color: $btn-medium-color;
+opacity: 0.9;
+}
+&:focus {
+color: $btn-medium-color;
+border-color: $btn-medium-color;
+outline: none;
+text-decoration: none;
+}
+&:visited {
+color: $btn-medium-color;
+border-color: $btn-medium-color;
+}
+}

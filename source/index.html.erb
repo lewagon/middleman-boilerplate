@@ -1,10 +1,246 @@
 ---
-title: Welcome to Middleman
+title: Welcome to Abitbol Fashion
 ---
 
-<div class="welcome text-center">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="banner" class="smooth-scrollable">
+  <div class="fade-and-slide">
+    <h1>ABITBOL FASHION</h1>
+    <br>
+    <p>You too can be the classiest man</p>
+    <p>in the world</p>
+    <br>
+    <a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn-medium">GET A QUOTE</a>
+  </div>
+  <a href="#description"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
+</div>
+<div class="bg-primary padded" id="description">
+  <div class="container inline text-center" id="features">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card" data-sr="enter bottom and scale up 20% over 1s">
+          <%= image_tag "noun_62572_cc.svg", class: "michel" %>
+          <h2>Intellectual power</h2>
+          <p>Because you know what a Tchernobyl cowboy is, you know how to challenge the brightness minds. <strong>"Bac+2 les enfants!"</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card" data-sr="enter bottom and scale up 20% over 1.5s">
+          <%= image_tag "noun_14545.svg", class: "michel" %>
+          <h2>Not only fashion</h2>
+          <p>Forget Azzedine Alaïa, being classy is so much more than that. <strong>Don't be like José!</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <br><br>
+        <div class="card" data-sr="enter bottom and scale up 20% over 2s">
+          <%= image_tag "noun_4023.svg", class: "michel" %>
+          <h2>Society</h2>
+          <p>Do you know the Great Capital egemony? <strong>Are you a right-wing dinosaur fucker?</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="card" data-sr="enter bottom and scale up 20% over 2.5s">
+          <%= image_tag "noun_44998_cc.svg", class: "michel" %>
+          <h2>Fooding</h2>
+          <p>Don't eat burgers unless you want to get sick. <strong>Choose "ouiche lorraine" instead!</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#newsletter"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
+</div>
+<div class="text-center padded smooth-scrollable" id="newsletter">
+  <h2>Get news from Abitbol</h2>
+  <p>Leave us a beautiful "lettre épistolaire"</p>
+  <form class="form-inline">
+    <input type="email" placeholder="dino@gmail.com" class="form-control">
+    <input type="submit" value="Subscribe" class="btn btn-primary btn-bordered btn-bordered-primary">
+  </form>
+</div>
+ <!-- Map -->
+<div id="padding-erase">
+<div class="container">
+<div class="row">
+<div class="col-xs-9">
+<div id="map" style="width: 100%; height: 400px;"></div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+var myOptions = {
+zoom: 16,
+center: myLatlng,
+scrollwheel: false,
+mapTypeId: google.maps.MapTypeId.ROADMAP,
+styles: [{
+"featureType": "landscape.man_made",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#f7f1df"
+}
+]
+},
+{
+"featureType": "landscape.natural",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#d0e3b4"
+}
+]
+},
+{
+"featureType": "landscape.natural.terrain",
+"elementType": "geometry",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.business",
+"elementType": "all",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "poi.medical",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#fbd3da"
+}
+]
+},
+{
+"featureType": "poi.park",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#bde6ab"
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "geometry.stroke",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road",
+"elementType": "labels",
+"stylers": [
+{
+"visibility": "off"
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#ffe15f"
+}
+]
+},
+{
+"featureType": "road.highway",
+"elementType": "geometry.stroke",
+"stylers": [
+{
+"color": "#efd151"
+}
+]
+},
+{
+"featureType": "road.arterial",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#ffffff"
+}
+]
+},
+{
+"featureType": "road.local",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "black"
+}
+]
+},
+{
+"featureType": "transit.station.airport",
+"elementType": "geometry.fill",
+"stylers": [
+{
+"color": "#cfb2db"
+}
+]
+},
+{
+"featureType": "water",
+"elementType": "geometry",
+"stylers": [
+{
+"color": "#a2daf2"
+}
+]
+}] // TODO: replace [] by array from https://snazzymaps.com/
+};
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+position: myLatlng,
+map: map,
+title: "You are here!"
+});
+</script>
+</div>
+<div class="col-xs-3">
+<h2>Come see us!</h2>
+<p>Meet our team at our Parisian office.</p>
+</br>
+<p id="closer">25, rue du Petit Musc</p>
+<p id="closer">75004 Paris</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(function() {
+// Smooth scroll
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+// Scroll reveal
+window.sr = new scrollReveal();
+});
+</script>
