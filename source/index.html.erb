@@ -1,10 +1,84 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Welcome to Stylus
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <div id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <h1>Styl.us</h1>
+          <br>
+          <p>Turn your pen into you best friend</p>
+          <p>Make every line you write count..</p>
+          <br>
+          <a href="" class="btn btn-primary btn-lg">GET YOUR STYLUS</a>
+        </div>
+        <div class="col-xs-6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="blue-bg padded">
+    <div class="container text-center" id="features">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+          <%= image_tag "paper.svg" %>
+            <h2>Natural writing</h2>
+            <p>Don't change your habits, write with a pen <strong>on paper notebooks</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+          <%= image_tag "computer.svg" %>
+            <h2>Sync. copy</h2>
+            <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+          <%= image_tag "analytics.svg" %>
+            <h2>Analytics</h2>
+            <p>Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+          <%= image_tag "data.svg" %>
+            <h2>Storing your texts</h2>
+            <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center padded">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+    <form class="form-inline">
+      <input type="email" placeholder="bob@gmail.com" class="form-control">
+      <input type="submit" value="Subscribe" class="btn btn-primary">
+    </form>
+  </div>
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title:"You are here!"
+  });
+  </script>

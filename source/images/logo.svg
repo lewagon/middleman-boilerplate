@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>svg-workshop</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="noun_53027_cc" sketch:type="MSLayerGroup" transform="translate(13.000000, 13.000000)">
+            <path d="M70,6.036 L5,71.035 L5,85 L12.5,85 L18.964,85 L83.965,20 L70,6.036 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M87.5,85 L26.035,85 L89.267,21.768 C90.244,20.792 90.244,19.209 89.267,18.233 L71.767,0.733 C70.79,-0.244 69.208,-0.244 68.232,0.733 L0.732,68.233 C0.263,68.701 0,69.337 0,70 L0,87.5 C0,88.881 1.119,90 2.5,90 L87.5,90 C88.881,90 90,88.881 90,87.5 C90,86.119 88.881,85 87.5,85 L87.5,85 Z M5,85 L5,71.035 L70,6.035 L83.965,20 L18.965,85 L5,85 L5,85 Z" id="Shape" fill="#D0011B" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
