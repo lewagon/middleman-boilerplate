@@ -44,9 +44,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+          <li>
+              <% link_to "/team.html" do %>
+                <i class="fa fa-users"></i> Team
               <% end %>
             </li>
             <li>
@@ -68,5 +68,22 @@
     </nav>
 
     <%= yield %>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <ul class="list-inline">
+              <li><a href=""><i class="fa fa-youtube"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-8 text-right">
+            <p>Stylus is a fictive product by LeWagon</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
