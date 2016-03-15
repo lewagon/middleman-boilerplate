@@ -5,7 +5,7 @@
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
+
     <!-- For Bootstrap responsiveness -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -36,37 +36,93 @@
             <span class="icon-bar"></span>
           </button>
           <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'logo.svg' %>
+            <%= image_tag 'eMyth.png' %>
           <% end %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-          <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "/index.html" do %>
+                Accueil
               <% end %>
             </li>
+
+            <li>
+              <% link_to "/métier.html" do %>
+                Notre métier
+              <% end %>
+            </li>
+
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nos réalisations<span class="caret"></span></a>
+
+              <ul class="dropdown-menu" role="menu">
+
+            <li>
+              <% link_to "/faux marbre.html" do %>
+                Faux-marbre
+              <% end %>
+            </li>
+
+            <li>
+              <% link_to "/faux bois.html" do %>
+                Faux-bois
+              <% end %>
+            </li>
+
+            <li>
+              <% link_to "/décors peints.html" do %>
+                Décors peints
+              <% end %>
+            </li>
+
+          </ul>
+
+            <li>
+              <% link_to "/Qui sommes nous.html" do %>
+                Qui sommes-nous ?
+                <% end %>
+            </li>
+
+            <li>
+              <% link_to "/Références.html" do %>
+                Nos références
+                <% end %>
+            </li>
+
             <li>
               <% link_to "/contact.html" do %>
                 <i class="fa fa-envelope-o"></i> Contact
               <% end %>
             </li>
+
+
+
+
+
+
+
+
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Follow-us <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Suivez-nous <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://www.facebook.com/lewagonformation"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                <li><a href="https://twitter.com/lewagonparis"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-              </ul>
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i> Facebook</a>
             </li>
-            <li><a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn">Order now</a></li>
-          </ul>
+
+
+
+
+        </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
     <%= yield %>
+    <p>e-Myth Tous droits réservés.</p>
+
+
   </body>
 </html>

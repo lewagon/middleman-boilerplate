@@ -3,8 +3,9 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900,300italic,200italic,400italic);
 $base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Montserrat", "sans-serif";
+$header-font: "Raleway", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -26,7 +27,7 @@ $base-height: 1.4;
 // Scheme
 $red: #EE5F5B;
 $blue: #469AE0;
-$yellow: #FDB631;
+$yellow: #F28C64;
 $orange: #E67E22;
 $green: #32B796;
 $purple: #6452BD;
