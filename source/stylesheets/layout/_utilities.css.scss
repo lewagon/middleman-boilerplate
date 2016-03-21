@@ -47,14 +47,13 @@
 .container{
   width: 1000px;
   margin: 10px auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .style{
+  position: relative;
   background : white;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   box-shadow: 1px 1px 3px $gray-light;
 }
 
@@ -152,7 +151,7 @@ h4 {
   line-height : 24px;
   }
 
-  h5 {
+h5 {
   font-size: 14 px;
   font-style:italic;
   color:gray-lighter;
