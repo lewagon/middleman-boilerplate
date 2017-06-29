@@ -1,1 +1,22 @@
 // Your footer style
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $gray;
+  width: 100%;
+  color: $gray-lighter;
+  padding: 30px;
+}
+
+.footer a {
+  color: $gray-lighter;
+ }
+
+.footer a i {
+  font-size: 26px;
+  padding: 0 20px 20px 0px;
+  &:hover {
+  color: $blue;
+  }
+}
