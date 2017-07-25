@@ -4,9 +4,12 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 6em;
+  padding-bottom: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+
 .bg-red {
   background: $red;
   color: white;
@@ -31,3 +34,152 @@
   background: $purple;
   color: white;
 }
+
+.spacer {
+  height: 2em;
+}
+
+.list-inline {
+  padding: 80px;
+
+}
+
+.container{
+  width: 1000px;
+  margin: 10px auto;
+}
+
+
+
+.style{
+  position: relative;
+  background : white;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 1px 1px 3px $gray-light;
+}
+
+
+
+.Signature{
+  font-size: 14 px;
+  color:gray-light;
+  text-align: right;
+  margin-right: 400px;
+}
+
+.Signature2{
+  font-size: 14 px;
+  font-style:italic;
+  color:gray-lighter;
+  text-align: right;
+}
+
+.textefr {
+  font-size: 22 px;
+  color:gray-darker;
+  text-align: justify;
+  line-height: 24px;
+  margin-right: 400px;
+  }
+
+.texteEngl {
+  font-size: 22 px;
+  font-style: italic;
+  color: gray-lighter;
+  text-align: justify;
+  line-height : 24px;
+  margin-left: 400px;
+  }
+
+
+#left-container{
+  width: 30%;
+  float: left;
+}
+
+#centered-container{
+  width: 30%;
+  float: center;
+}
+
+#right-container{
+  width: 30%;
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.img-circle{
+  margin: 10px;
+  width: 40%;
+}
+
+
+
+#presentation {
+  padding-top: 6em;
+  padding-bottom: 1em;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+#filet_horizontal {
+  width: 100 px;
+  height: 50 px;
+  border: solid 1px gray;
+  margin-bottom: 1em;
+}
+
+.global {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+h1 {
+  font-size: 16 px;
+  color:gray-light;
+  text-align: center;
+}
+
+
+h3 {
+  font-size: 8 px;
+  color:gray-light;
+  text-align: center;
+}
+
+h4 {
+  font-size: 14 px;
+  color:gray-light;
+  text-align: justify;
+  line-height : 24px;
+  }
+
+h5 {
+  font-size: 14 px;
+  font-style:italic;
+  color:gray-lighter;
+  text-align: justify;
+  line-height : 24px;
+}
+
+a{
+  font-size: 14 px;
+  color:gray-light;
+  hover-color:gray-light;
+}
+
+p{
+  font-size: 10 px;
+  color:gray-light;
+  padding-top: 2em;
+  text-align: center;
+}
+
+

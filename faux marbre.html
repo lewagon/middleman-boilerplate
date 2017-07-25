@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title>e-Myth Peintures décoratives d'exception</title>
 
-    <%= stylesheet_link_tag "all" %>
-    <%= javascript_include_tag  "all" %>
+    <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="javascripts/all.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="faux-marbre">
     <nav class="navbar navbar-default navbar-fixed-top navbar-wagon" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,26 +35,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <% link_to "/index.html", class: "navbar-brand" do %>
-            <%= image_tag 'eMyth.png' %>
-          <% end %>
-        </div>
+<a class="navbar-brand" href="./">            <img src="images/eMyth.png" />
+</a>        </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
         <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/index.html" do %>
-                Accueil
-              <% end %>
-            </li>
+<a href="./">                Accueil
+</a>            </li>
 
             <li>
-              <% link_to "/metier.html" do %>
-                Notre métier
-              <% end %>
-            </li>
+<a href="/métier.html">                Notre métier
+</a>            </li>
 
               <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nos réalisations<span class="caret"></span></a>
@@ -62,42 +56,30 @@
               <ul class="dropdown-menu" role="menu">
 
             <li>
-              <% link_to "/faux marbre.html" do %>
-                Faux-marbre
-              <% end %>
-            </li>
+<a href="/faux marbre.html">                Faux-marbre
+</a>            </li>
 
             <li>
-              <% link_to "/faux bois.html" do %>
-                Faux-bois
-              <% end %>
-            </li>
+<a href="/faux bois.html">                Faux-bois
+</a>            </li>
 
             <li>
-              <% link_to "/decors peints.html" do %>
-                Décors peints
-              <% end %>
-            </li>
+<a href="/décors peints.html">                Décors peints
+</a>            </li>
 
           </ul>
 
             <li>
-              <% link_to "/Qui sommes nous.html" do %>
-                Qui sommes-nous ?
-                <% end %>
-            </li>
+<a href="/Qui sommes nous.html">                Qui sommes-nous ?
+</a>            </li>
 
             <li>
-              <% link_to "/references.html" do %>
-                Nos références
-                <% end %>
-            </li>
+<a href="/Références.html">                Nos références
+</a>            </li>
 
             <li>
-              <a href="mailto:atelier.cmartin@wanadoo.fr">
-                <i class="fa fa-envelope-o"></i>
-            </a>
-            </li>
+<a href="contact.html">                <i class="fa fa-envelope-o"></i> Contact
+</a>            </li>
 
 
 
@@ -109,7 +91,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Suivez-nous <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="https://www.facebook.com/ChristopheMartin65"><i class="fa fa-facebook-square"></i> Facebook</a>
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i> Facebook</a>
             </li>
 
 
@@ -120,7 +102,18 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <%= yield %>
+    <div class="welcome text-center padded">
+
+  <h1>Peintures Faux-marbre</h1>
+  <p class="doc">
+
+    <div class="container text-center expandOpen">
+    <img src="images/Faux marbres sur colonne.jpg" alt="Peintures décoratives Faux-marbre">
+
+  </div>
+  </p><!-- .doc -->
+</div><!-- .welcome -->
+
     <p>e-Myth Tous droits réservés.</p>
 
 
