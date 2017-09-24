@@ -6,6 +6,11 @@ Forked from [lewagon/middleman-boilerplate](https://github.com/lewagon/middleman
 2. Run `middleman s` to start the server.
 3. Start to code !
 
+## Deploy
+1. `rake publish`
+2. Go to your Github repository > settings > github pages (Options) and select your build branch
+3. Website is deployed !
+
 ## Contributing
 You shouldn't contribute on this fork, but if you really want, follow this guide :
 

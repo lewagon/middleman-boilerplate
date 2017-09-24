@@ -79,6 +79,8 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-gh-pages (0.3.1)
+      rake (> 0.9.3)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -92,6 +94,7 @@ GEM
     parallel (1.12.0)
     public_suffix (3.0.0)
     rack (2.0.3)
+    rake (12.1.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -119,6 +122,7 @@ DEPENDENCIES
   font-awesome-sass
   jquery-middleman
   middleman (~> 4.2)
+  middleman-gh-pages
   middleman-sprockets
   sass-globbing
   tzinfo-data

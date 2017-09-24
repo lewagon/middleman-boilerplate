@@ -7,6 +7,9 @@ gem "middleman", "~> 4.2"
 # Live-reloading plugin
 # gem "middleman-livereload"
 
+# Deploy on github pages
+gem 'middleman-gh-pages'
+
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
